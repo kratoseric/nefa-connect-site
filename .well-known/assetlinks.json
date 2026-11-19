@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nefaconnect.chat",
+      "sha256_cert_fingerprints": [
+        "31:E4:55:04:10:CF:EE:EA:C1:DA:1F:8A:DA:DF:2A:93:1D:F4:97:26:AB:18:5D:C5:A3:BD:3E:B8:FA:ED:BD:13",
+        "DA:F3:42:56:20:E7:ED:7D:E9:34:58:C8:4B:90:5C:54:CD:97:81:3F:05:0D:71:9C:DC:A7:C7:83:2D:E7:E2:25"
+      ]
+    }
+  }
+]

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Nefa Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #0070f3;
+            --neon-green: #63E6BE;
+            --dark-bg: #0a0a0a;
+            --card-bg: #111111;
+            --text-main: #ffffff;
+            --text-muted: #888888;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(180deg, rgba(0,112,243,0.1) 0%, var(--dark-bg) 100%);
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        .app-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 25%;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        h1 { font-size: 2.5rem; margin: 20px 0 10px 0; letter-spacing: -1px; }
+        h2 { font-size: 1.5rem; color: var(--neon-green); margin-top: 40px; margin-bottom: 15px; }
+        h3 { font-size: 1.2rem; color: var(--text-main); margin-top: 25px; margin-bottom: 10px; }
+
+        p, li { color: var(--text-muted); font-size: 1rem; margin-bottom: 15px; }
+        strong { color: var(--text-main); }
+        a { color: var(--primary-blue); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .section { margin-bottom: 30px; }
+        .faq-item { background: var(--card-bg); border: 1px solid #222; border-radius: 12px; padding: 20px; margin-bottom: 15px; }
+        .faq-question { font-size: 1.1rem; font-weight: 600; color: var(--text-main); margin-bottom: 10px; }
+        .faq-answer { color: var(--text-muted); }
+
+        .contact-card {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-card h3 { color: var(--neon-green); margin-bottom: 10px; }
+        .contact-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 12px 24px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .contact-btn:hover { background: #0056cc; text-decoration: none; color: white; }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .back-link:hover { background: #0056cc; text-decoration: none; }
+
+        footer { padding: 40px 20px; color: var(--text-muted); font-size: 0.9rem; text-align: center; border-top: 1px solid #222; }
+        footer a { color: var(--primary-blue); text-decoration: none; margin: 0 10px; }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        header { padding: 40px 20px; background: linear-gradient(180deg, rgba(0,112,243,0.1) 0%, var(--dark-bg) 100%); text-align: center; border-bottom: 1px solid #222; }
+        .app-logo { width: 100px; height: 100px; border-radius: 25%; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+        h1 { font-size: 2.5rem; margin: 20px 0 10px 0; letter-spacing: -1px; }
+        h2 { font-size: 1.5rem; color: var(--neon-green); margin-top: 40px; margin-bottom: 15px; }
+        h3 { font-size: 1.2rem; color: var(--text-main); margin-top: 25px; margin-bottom: 10px; }
+        p, li { color: var(--text-muted); font-size: 1rem; margin-bottom: 15px; }
+        strong { color: var(--text-main); }
+        a { color: var(--primary-blue); text-decoration: none; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .section { margin-bottom: 30px; }
+        .faq-item { background: var(--card-bg); border: 1px solid #222; border-radius: 12px; padding: 20px; margin-bottom: 15px; }
+        .faq-question { font-size: 1.1rem; font-weight: 600; color: var(--text-main); margin-bottom: 10px; }
+        .faq-answer { color: var(--text-muted); }
+        .contact-card { background: var(--card-bg); border: 1px solid #222; border-radius: 12px; padding: 24px; margin-bottom: 20px; text-align: center; }
+        .contact-card h3 { color: var(--neon-green); margin-bottom: 10px; }
+        .contact-btn { display: inline-block; margin-top: 12px; padding: 12px 24px; background: var(--primary-blue); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; }
+        .contact-btn:hover { background: #0056cc; text-decoration: none; color: white; }
+        .back-link { display: inline-block; margin-top: 30px; padding: 12px 24px; background: var(--primary-blue); color: white; border-radius: 8px; font-weight: 600; text-decoration: none; }
+        .back-link:hover { background: #0056cc; text-decoration: none; }
+        footer { padding: 40px 20px; color: var(--text-muted); font-size: 0.9rem; text-align: center; border-top: 1px solid #222; }
+        footer a { color: var(--primary-blue); text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Nefa Connect Icon" class="app-logo">
+        <h1>Support Center</h1>
+        <p style="color: var(--text-muted);">Get help with Nefa Connect</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Contact Us</h2>
+            <p>Can't find what you're looking for? We're here to help.</p>
+
+            <div class="contact-card">
+                <h3>General Support</h3>
+                <p>App issues, feature questions, account help</p>
+                <a href="mailto:nefaconnect@gmail.com?subject=Support%20Request" class="contact-btn">Email Support</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Privacy & Data Requests</h3>
+                <p>Data access, deletion, privacy questions</p>
+                <a href="mailto:nefaconnect@gmail.com?subject=Privacy%20Request" class="contact-btn">Contact Privacy Team</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Business & Partnerships</h3>
+                <p>Advertising, partnerships, press inquiries</p>
+                <a href="mailto:nefaconnect@gmail.com?subject=Business%20Inquiry" class="contact-btn">Business Inquiries</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Report Abuse / Safety</h3>
+                <p>Report harassment, spam, or safety concerns</p>
+                <a href="mailto:nefaconnect@gmail.com?subject=Safety%20Report" class="contact-btn">Report Issue</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I spread or resist a post?</div>
+                <div class="faq-answer">Swipe UP on a post to SPREAD it to nearby users (increasing its viral reach). Swipe DOWN to RESIST and stop the spread. Each action earns Viral Points and affects the epidemic map.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does the epidemic map work?</div>
+                <div class="faq-answer">The map shows real-time infection clusters based on where posts are being spread. Pulsing circles indicate active viral zones. Your posts create infection clusters around your location (if enabled).</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I earn Viral Points and rank up?</div>
+                <div class="faq-answer">Earn points by spreading posts, having your posts spread by others, receiving likes, and daily logins. Ranks progress from Carrier → Infector → Super Spreader → Pandemic. Higher ranks unlock exclusive holographic cards.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I add friends?</div>
+                <div class="faq-answer">Go to the Find tab (search icon) and search by username or shared interests. Send a friend request — once accepted, you'll see each other's posts and can chat directly.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I enable/disable location?</div>
+                <div class="faq-answer">Location is used for the epidemic map and nearby discovery. Manage it in your device settings: iOS → Settings > Nefa Connect > Location; Android → Settings > Apps > Nefa Connect > Permissions > Location.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I delete my account?</div>
+                <div class="faq-answer">Go to Settings > Account > Delete Account. This permanently removes your profile, posts, friends, and chat history. Data is purged within 30 days. This action cannot be undone.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why am I not receiving push notifications?</div>
+                <div class="faq-answer">Check: 1) App has notification permission in device settings, 2) In-app Settings > Notifications are enabled, 3) Battery optimization isn't restricting the app (Android), 4) You're logged in. If issues persist, try logging out and back in.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I report a bug or suggest a feature?</div>
+                <div class="faq-answer">Email <a href="mailto:nefaconnect@gmail.com">nefaconnect@gmail.com</a> with your device model, OS version, app version, and steps to reproduce. Screenshots or screen recordings help us fix issues faster.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do ads work in the app?</div>
+                <div class="faq-answer">We show ads via Google AdMob to keep the app free. You'll see a native ad card every ~10 posts in the feed. Test ads are shown during development. You can opt out of personalized ads in your device settings (see Privacy Policy for details).</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">My post was removed / I was banned. What now?</div>
+                <div class="faq-answer">Content violating Community Guidelines (hate speech, harassment, illegal content, spam) may be removed. Repeated violations can lead to temporary or permanent bans. Appeal by emailing <a href="mailto:nefaconnect@gmail.com?subject=Ban%20Appeal">nefaconnect@gmail.com</a> with your username and details.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Troubleshooting</h2>
+            <ul>
+                <li><strong>App crashes on launch:</strong> Update to latest version. If persistent, reinstall the app.</li>
+                <li><strong>Feed not loading:</strong> Check internet connection. Pull down to refresh.</li>
+                <li><strong>Chat messages not sending:</strong> Check connection. Ensure recipient hasn't blocked you.</li>
+                <li><strong>Location not working:</strong> Ensure location permission is granted and GPS is enabled.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>App Store Links</h2>
+            <ul>
+                <li><a href="https://apps.apple.com/in/app/nefa-connect/id6761297342">iOS App Store</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.nefaconnect.chat">Google Play Store</a></li>
+            </ul>
+        </section>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Nefa Connect. All rights reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="support.html">Support</a>
+        </p>
+    </footer>
+</body>
+</html>

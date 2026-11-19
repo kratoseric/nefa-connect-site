@@ -1,0 +1,31 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "3KQX856J8D.com.nefaconnect.chat"
+        ],
+        "components": [
+          {
+            "/": "/profile/*"
+          },
+          {
+            "/": "/post/*"
+          },
+          {
+            "/": "/business/*"
+          },
+          {
+            "/": "/event/*"
+          },
+          {
+            "/": "/stay/*"
+          },
+          {
+            "/": "/r.html"
+          }
+        ]
+      }
+    ]
+  }
+}

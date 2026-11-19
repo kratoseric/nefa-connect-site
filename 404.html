@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a1014">
+  <title>Open in Nefa Connect</title>
+  <meta name="description" content="Open this Nefa Connect link securely in the app.">
+  <style>
+    :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0a1014; color: #fff; }
+    main { width: min(92vw, 520px); text-align: center; padding: 36px 24px; background: #152027; border: 1px solid #2c3a42; border-radius: 24px; }
+    img { width: 84px; height: 84px; border-radius: 22px; }
+    h1 { margin: 18px 0 8px; }
+    p { color: #b6c1c7; line-height: 1.5; }
+    .actions { display: grid; gap: 12px; margin-top: 26px; }
+    a { padding: 14px 18px; border-radius: 14px; text-decoration: none; font-weight: 700; }
+    .primary { background: #63e6be; color: #07130f; }
+    .secondary { border: 1px solid #52616a; color: #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="/logo.png" alt="Nefa Connect logo">
+    <h1 id="title">Open in Nefa Connect</h1>
+    <p id="message">For privacy, shared content is shown only after signing into the app.</p>
+    <div class="actions">
+      <a id="open-app" class="primary" href="nefaconnect://">Open Nefa Connect</a>
+      <a class="secondary" href="https://play.google.com/store/apps/details?id=com.nefaconnect.chat">Get it on Google Play</a>
+      <a class="secondary" href="https://apps.apple.com/app/id6761297342">Get it on the App Store</a>
+    </div>
+  </main>
+  <script>
+    const segments = location.pathname.split('/').filter(Boolean);
+    const type = ['profile', 'post', 'business', 'event', 'stay'].includes(segments[0]) ? segments[0] : '';
+    const id = segments[1] || '';
+    if (type && id) {
+      const labels = {
+        profile: 'Profile',
+        post: 'Pulse',
+        business: 'NEFA HUB business',
+        event: 'NEFA Event',
+        stay: 'stay request'
+      };
+      document.getElementById('title').textContent = `Open this ${labels[type]}`;
+      document.getElementById('open-app').href = `nefaconnect://${type}/${encodeURIComponent(id)}`;
+    }
+  </script>
+</body>
+</html>
